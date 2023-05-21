@@ -1,0 +1,148 @@
+body {
+    background-color: #000;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'unica one', display;
+    font-weight: 500;
+}
+
+#container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 56px;
+    color: beige;
+    text-shadow: 0px 2px 3px #555;
+    text-align: center;
+}
+
+/* ----- Controls ----- */
+
+#controls {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.7);
+    background-color: rgb(63, 63, 63, 0.4);
+    padding: 40px;
+    border-radius: 70px;
+}
+
+
+#playButton {
+	float: left;
+    height: 48px;
+    width: 48px;
+    border: none;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+.play { 
+    background: url(../img/play.png);
+}
+
+.pause { 
+    background: url(../img/pause.png);
+}
+ 
+#volumeLabel {
+	background: url(../img/volume.png);
+    height: 48px;
+    width: 48px;
+    margin-left: 10px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+ 
+#volume {
+	margin: 15px 0;
+    vertical-align: middle;
+    float: left;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    color: white; 
+    text-decoration: none;
+    line-height: 1.7;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+
+/* ----- Carousel ----- */
+
+#audioSlideshow {
+    padding: 0;
+    margin: 50px auto;
+}
+
+#audioSlideshow .item {
+    height: 600px;
+}
+
+.item {
+    margin-bottom: -200px;
+}
+
+.song-desc{
+    background-color: #000;
+    padding: 30px 0 20px 15px;
+}
+
+.owl-nav {
+    font-size: 40px;
+}
+
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: -40px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: -40px;
+    display: block !important;
+    border:0px solid black;
+}
+
+/* ----- Track List ----- */
+
+.track-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(131, 118, 104, 0.7);
+    border-radius: 50%;
+    padding: 50px;
+}
+
+.track-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -30px;
+}
